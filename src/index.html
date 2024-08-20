@@ -12,13 +12,13 @@
   </head>
 
   <body>
-    <ul class="filters">
+    <ul class=" filters">
       <li>
         <label>Include Cover</label>
         <select class="picker" for="includeCover">
           <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
+          <option value="true">Incluir fondo</option>
+          <option value="false">No incluir fondo</option>
         </select>
       </li>
       <li>
@@ -30,15 +30,21 @@
         <input class="picker" for="lastName" type="text" />
       </li>
       <li>
-        <label>S.M. Position</label>
+        <label>Posicion de la barra de RRSS</label>
         <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
+          <option value="left">Lado Izquierdo</option>
+          <option value="right">Lado Derecho</option>
         </select>
       </li>
       <li>
         <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
+        <input
+          class="picker"
+          for="twitter"
+          type="text"
+          placeholder="@..."
+          required
+        />
       </li>
       <li>
         <label>Github</label>

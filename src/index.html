@@ -9,88 +9,142 @@
       src="https://kit.fontawesome.com/072e5df971.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
 
-  <body>
-    <ul class=" filters">
-      <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
-          <option value="">Include Cover</option>
-          <option value="true">Incluir fondo</option>
-          <option value="false">No incluir fondo</option>
-        </select>
-      </li>
-      <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
-      </li>
-      <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastName" type="text" />
-      </li>
-      <li>
-        <label>Posicion de la barra de RRSS</label>
-        <select class="picker" for="socialMediaPosition">
-          <option value="left">Lado Izquierdo</option>
-          <option value="right">Lado Derecho</option>
-        </select>
-      </li>
-      <li>
-        <label>Twitter</label>
-        <input
-          class="picker"
-          for="twitter"
-          type="text"
-          placeholder="@..."
-          required
-        />
-      </li>
-      <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
-      </li>
-      <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
-      </li>
-      <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
-      </li>
-      <li>
-        <label>Role</label>
-        <select class="picker" for="role">
-          <option value="">null</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
-        </select>
-      </li>
-      <li>
-        <label>City</label>
-        <select class="picker" for="city">
-          <option value="">null</option>
-          <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
-          <option value="Caracas">Caracas</option>
-          <option value="Toronto">Toronto</option>
-        </select>
-      </li>
-      <li>
-        <label>Country</label>
-        <select class="picker" for="country">
-          <option value="">null</option>
-          <option value="USA">USA</option>
-          <option value="Germany">Germany</option>
-          <option value="Canada">Canada</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
-      </li>
-    </ul>
+  <body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="filters d-flex justify-content-between align-content-center mt-3 me-4"
+          >
+            <li class="justify-content-center">
+              <label class="text-center">Foto</label>
+              <select class="picker " for="includeCover">
+                <option value="true">Incluir fondo para perfil</option>
+                <option value="false">No incluir fondo para perfil</option>
+              </select>
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Nombre</label>
+              <input class="picker" for="name" type="text" />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Apellido</label>
+              <input class="picker" for="lastName" type="text" />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Posicion de RRSS</label>
+              <select class="picker" for="socialMediaPosition">
+                <option value="left">Lado Izquierdo</option>
+                <option value="right">Lado Derecho</option>
+              </select>
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">X</label>
+              <input
+                class="picker"
+                for="twitter"
+                type="text"
+                placeholder="@..."
+              />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Github</label>
+              <input class="picker" for="github" type="text" placeholder="-" />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">LinkedIn</label>
+              <input
+                class="picker"
+                for="linkedin"
+                type="text"
+                placeholder="-"
+              />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Instagram</label>
+              <input
+                class="picker"
+                for="instagram"
+                type="text"
+                placeholder="-"
+              />
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Role</label>
+              <select class="picker" for="role">
+                <option value="-">-</option>
+                <option value="Estudiante de Programacion Web"
+                  >Estudiante de Programacion Web</option
+                >
+                <option value="Web Developer">Web Developer</option>
+                <option value="Floor Planner">Floor Planner</option>
+                <option value="Technical Writter">Technical Writter</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="DevOps Engineer">DevOps Engineer</option>
+                <option value="Cybersecurity Analyst"
+                  >Cybersecurity Analyst</option
+                >
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="AI/Machine Learning Engineer"
+                  >AI/Machine Learning Engineer</option
+                >
+                <option value="Product Manager">Product Manager</option>
+                <option value="Database Administrator (DBA)"
+                  >Database Administrator (DBA)</option
+                >
+                <option value="Network Engineer">Network Engineer</option>
+              </select>
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">City</label>
+              <select class="picker" for="city">
+                <option value="-">-</option>
+                <option value="Miami">Miami</option>
+                <option value="Munich">Munich</option>
+                <option value="Caracas">Caracas</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Zaragoza">Zaragoza</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Iran">City of Iran</option>
+              </select>
+            </li>
+            <li class="justify-content-center">
+              <label class="text-center">Country</label>
+              <select class="picker" for="country">
+                <option value="-">-</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+                <option value="Iran">Iran</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="OTHERS">OTROS</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div id="widget_content"></div>
 
-    <!-- do not remove this bundle.js tag -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="/main.bundle.js"></script>
   </body>
 </html>

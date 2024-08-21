@@ -34,8 +34,8 @@ function render(variables = {}) {
   const city = variables.city != null ? variables.city : "Pick a city";
   const country =
     variables.country != null ? variables.country : "Pick a State";
-npm run
-
+  const redesSociales =
+    variables.socialMediaPosition != "left" ? "right" : "left"; // lo habia hecho con values= left y rigth en el html pero lo cambie a ternario
   // print on the console
   // here we ask the logical questions to make decisions on how to build the html
   // if includeCover==false then we reset the cover code without the <img> tag to make the cover transparent.
@@ -49,7 +49,7 @@ npm run
           <h1>${name} ${lastName}</h1>
           <h2>${role}</h2>
           <h3>${city} ${country}</h3>
-          <ul class="${position}">
+          <ul class="position-${redesSociales}">
            <li><a href="https://twitter.com/${variables.twitter}/" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github}" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${variables.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></li>

@@ -1,5 +1,6 @@
 import { name } from "file-loader";
 import "../style/index.css";
+import { left, right } from "@popperjs/core";
 
 /**
  *  EDIT ONLY INSIDE THIS RENDER FUNCTION
@@ -33,6 +34,7 @@ function render(variables = {}) {
   const city = variables.city != null ? variables.city : "Pick a city";
   const country =
     variables.country != null ? variables.country : "Pick a State";
+npm run
 
   // print on the console
   // here we ask the logical questions to make decisions on how to build the html
@@ -47,7 +49,7 @@ function render(variables = {}) {
           <h1>${name} ${lastName}</h1>
           <h2>${role}</h2>
           <h3>${city} ${country}</h3>
-          <ul class="position-${variables.socialMediaPosition}">
+          <ul class="${position}">
            <li><a href="https://twitter.com/${variables.twitter}/" target="_blank"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github}" target="_blank"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${variables.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
